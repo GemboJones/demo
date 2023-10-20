@@ -7,11 +7,11 @@
 <body>
     <div style="border: 3px solid black;">
         <h2>Add member</h2>
-        <form action="/new-member" method='POST'>
+        <form action="/create-member" method='POST'>
             @csrf
             <input name="name" type="text" placeholder='name'>
             <input name="email" type="text" placeholder='email'>
-            <input name="password" type="password" placeholder='password'>
+            <input name="school" type="text" placeholder='school'>
             <button>Add</button>
         </form>
     </div>

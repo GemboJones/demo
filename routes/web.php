@@ -18,4 +18,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::post('/new-member', [MemberController::class, 'newMember']);
+Route::get('list', 
+[MemberController::class, 'getMembers']);
+
+Route::post('create-member', [MemberController::class, 'createMember']);
